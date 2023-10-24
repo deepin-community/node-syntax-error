@@ -1,0 +1,25 @@
+{
+    "name": "@types/syntax-error",
+    "version": "1.4.1",
+    "description": "TypeScript definitions for syntax-error",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "TeamworkGuy2",
+            "url": "https://github.com/TeamworkGuy2",
+            "githubUsername": "TeamworkGuy2"
+        }
+    ],
+    "main": "",
+    "types": "index",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/acorn": "*"
+    },
+    "typesPublisherContentHash": "1005538be86f194060cf1a9f7712b0889f1a194325b84467443b0ad2146cf802",
+    "typeScriptVersion": "2.0"
+}

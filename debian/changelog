@@ -1,5 +1,53 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-syntax-error (1.4.0+~1.4.1-3) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository-Browse.
+  * Update standards version to 4.6.1, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 12:33:26 +0000
+
+node-syntax-error (1.4.0+~1.4.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix test for tap >= 15 (--no-cov)
+
+ -- Yadd <yadd@debian.org>  Thu, 14 Apr 2022 05:45:18 +0200
+
+node-syntax-error (1.4.0+~1.4.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-tap.
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.1.5, no changes needed.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Embed typescript definitions and repack
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Sat, 20 Nov 2021 09:36:58 +0100
+
+node-syntax-error (1.4.0-1) unstable; urgency=medium
+
+  * New upstream version
+  * Move to salsa
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 07 Jun 2018 17:52:51 +0200
+
+node-syntax-error (1.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #872592)
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 18 Aug 2017 23:43:06 +0200
