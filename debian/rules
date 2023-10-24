@@ -1,4 +1,20 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
 %:
 	dh $@
+
+override_dh_installexamples:
+ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+	dh_installexamples
+	# patch example
+	find $(CURDIR)/debian/node-syntax-error/usr/share/doc/node-syntax-error/examples/ -name '*.js' -exec \
+		sed -i "s,require\s*[(]\s*'[.][.][^']*'\s*[)],require('syntax-error'),g" {} \;
+else
+	@echo '**********************************************************'
+	@echo 'Skip example                          '
+	@echo '**********************************************************'
+endif

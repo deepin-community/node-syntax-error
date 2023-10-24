@@ -1,0 +1,4 @@
+Bug-Database: https://github.com/substack/node-syntax-error/issues
+Bug-Submit: https://github.com/substack/node-syntax-error/issues/new
+Repository: https://github.com/substack/node-syntax-error.git
+Repository-Browse: https://github.com/browserify/syntax-error
